@@ -1,72 +1,346 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Proyecto Final</title>
+    <title>Web de zapateria</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
-    <script src="main.js"></script>
+    <script src="js/jquery.js"></script>
 </head>
+
 <body>
-    <section id="contenedorprincipal">
-    <header id="cabecera">
-        <img src="img/logo.png" width="300" height="90" id="img">
-        <html>
-<br />
-<form method="get" action="https://www.google.com/search" ></form>
-<input type="text" name="q" size="31" maxlength="255" value="" placeholder="Haz tu busqueda aqui" id="input"/>
-
-<input type="submit" name="" value="Buscar" />
-</form>
-    <img id="logo">
+    <header>
+        <div class="contenedor">
+            <div id="Marca">
+                <h1>Zapateria<span class="resaltado"> Danielita</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="actual" id="cabecera" class="inicio"><a href="#">Inicio</a></li>
+                    <li class=""><a href="#Mujer">Mujer</a></li>
+                    <li class=""><a href="#Hombre">Hombre</a></li>
+                    <li class=""><a href="#Kids">Kids</a></li>
+                    <li class=""><a href="#Marca">Marcas</a></li>
+                    <li class=""><a href="#Contactanos">Contactanos</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <nav id="menu">
-        <ul>
-            <li id="li"><a href="http//:www.google.com" class="menu2">INICIO</a></li>
-        </ul>
-        <ul>
-            <li id="li"><a href="http//:www.google.com" class="menu2">HISTORIA</a></li>
-        </ul>
-        <ul>
-            <li id="li"><a href="http//:www.google.com" class="menu2">ELECTRONICA</a></li>
-        </ul>
-        <ul>
-           <li id="li"><a href="http//:www.google.com" class="menu2">TENDENCIAS</a></li>
-        </ul>
-
-    </nav>
-    <article>
-            <br>
-            <h1 id="new">INICIO</h1>
-            <hr>
-            <h2>Computadoras</h2>
-            <section class="section1">
-            <img src="img/compu.jpg" width="300" height="300"alt="">
-            <img src="img/windows.png" width="300" height="300"alt="">
-            <img src="img/lenovo.jpg" width="300" height="300"alt="">
-            <img src="img/lenovo2.jpg" width="300" height="300"alt="">
-            
-            <h2>Tema:</h2> 
-
-
-            <p class="parrafos">
-                    RadioShack Corporation (ex-Tandy Corporation) es una empresa estadounidense, que gestiona una cadena de tiendas de artículos y componentes electrónicos en Estados Unidos y México, propiedad de Standard General. Se asoció con la compañía de celulares Sprint, y la mayoría de las tiendas son de marca "Sprint", aunque también venden artículos de RadioShack.
-
-                    Fundada en 1921, tuvo su máximo auge en 1999, cuando operaba tiendas en Estados Unidos, México, Reino Unido, Australia y Canada. El 5 de febrero de 2015, la compañía clasificó para entrar en la protección del capítulo 11 de la ley de quiebras de Estados Unidos, luego de 11 trimestres consecutivos de pérdidas.1​2​ Luego de esto, opera sólo en Estados Unidos y México. El 31 de marzo de 2015, la Corte de Quiebras de Estados Unidos para el Distrito Norte de Texas aprobó una oferta de USD 160 millones de General Wireless, obteniendo la propiedad de 1.743 locales RadioShack, y arrendándolos inmediatamente a Sprint.
-                    
-                    En abril de 2015 Grupo Unicomer, con sede en San Salvador, adquiere las marcas, la propiedad intelectual y los contratos de los franquicitarios existentes de RadioShack para toda Centroamérica, Suramérica y el Caribe 3​
+    <section id="cabecera">
+        <div class="contenedor">
+            <h1>La mejor tienda en Tacuba de zapatos de marca y a la moda</h1>
+            <p>Somos una tienda que empezo en el 2017 bajo la iniciativa y el emprendimiento de Gerardo Rivera.
             </p>
-    </article>
-    <section id="contenedor">
+        </div>
+    </section>
+
+    <section id="boletin">
+        <div class="contenedor">
+            <h1>Suscribete a nuestro boletin para recibir ofertas</h1>
+            <form action="">
+                <input type="email" name="email" placeholder="ingrese su email...">
+                <button type="submit" class="boton1">Suscribete</button>
+            </form>
+        </div>
 
     </section>
-    <aside id="info">
-
-    </aside>
-   </section>
-    <footer id="piedepagina">
-
+    <section id="cajas">
+        <div class="contenedor">
+            <div class="caja">
+                <img src="img/zapatodemoda.jpg" alt="">
+                <h3>Zapatos para caballero</h3>
+                <p>Contamos con los mejores precios del mercado, llegó a nuestra tienda este zapato deportivo para caballeros
+                    a un maravilloso precio de $24.00 doláres.
+                </p>
+            </div>
+            <div class="caja">
+                <img src="img/zapatodemodaella.jpg" alt="">
+                <h3>Zapatos para señorita</h3>
+                <p>Sabemos que las Señoritas se merecen lo mejor por eso hemos importado de EE.UU esta nueva marca de zapatos
+                    especialmente para aquellas que quieren estar al paso de las modas. Llevatelos a tan solo $30.00 doláres.
+                </p>
+            </div>
+            <div class="caja">
+                <img src="img/zapatodemodael.jpg" alt="">
+                <h3>Zapatos de moda unisex</h3>
+                <p>Mira nuestras mejores ofertas del mercado, recientemente incorporamos este estilo de zapato para damas
+                    y caballeros a un increible precio de $26.70 doláres, ven antes que se agoten.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="Mujer">
+        <div class="contenedor">
+            <h1>Zapatos de Mujeres</h1>
+            <p>En nuestra tienda tenemos una extensa variedad de calzado para damas, recuerda enviarnos un correo para poder
+                tener la oportunidad de recibir ofertas en tu móvil o en tu ordenador.
+            </p>
+            <p class="oscuro">
+                En nuestra tienda tenemos ofertas especiales para ti. Se vienen grandes ofertas en este fin de ano.
+            </p>
+            <section id="cajas">
+                <div class="contenedor">
+                    <div class="caja">
+                        <img src="img/mujer (1).jpg" alt="">
+                        <h3>Jackie Robie</h3>
+                        <h4 class="cod">cd439670</h4>
+                        <h3>$40.00</h3>
+                        <button type="submit" class="boton1">Añadir al carrito</button>
+                    </div>
+                    <div class="caja">
+                        <img src="img/mujer (2).jpg" alt="">
+                        <h3>Tenis verdana</h3>
+                        <h4 class="cod">cd439670</h4>
+                        <h3>$30.00</h3>
+                        <button type="submit" class="boton1">Añadir al carrito</button>
+                    </div>
+                    <div class="caja">
+                        <img src="img/mujer (3).jpg" alt="">
+                        <h3>School</h3>
+                        <h4 class="cod">cd439670</h4>
+                        <h3>$19.50</h3>
+                        <button type="submit" class="boton1">Añadir al carrito</button>
+                    </div>
+                </div>
+            </section>
+            <section id="cajas">
+                <div class="contenedor">
+                    <div class="caja">
+                        <img src="img/tenisinformal.jpg" alt="">
+                        <h3>Tenis Informal</h3>
+                        <h4 class="cod">cd439670</h4>
+                        <h3>$30.00</h3>
+                        <button type="submit" class="boton1">Añadir al carrito</button>
+                    </div>
+                    <div class="caja">
+                        <img src="img/zapato blanco.jpg" alt="">
+                        <h3>Tenis casual</h3>
+                        <h4 class="cod">cd439670</h4>
+                        <h3>$25.70</h3>
+                        <button type="submit" class="boton1">Añadir al carrito</button>
+                    </div>
+                    <div class="caja">
+                        <img src="img/converse.jpg" alt="">
+                        <h3>converse</h3>
+                        <h4 class="cod">cd439670</h4>
+                        <h3>$25.00</h3>
+                        <button type="submit" class="boton1">Añadir al carrito</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+    <section id="Hombre">
+        <div class="contenedor">
+            <h1>Hombres</h1>
+            <hr>
+            <p>Mira nuestras mejores promociones de zapatos para hombres hasta del 30% de descuentos al pagar con tus tarjetas
+                de créditos del Banco Agricola.
+            </p>
+            <p class="oscuro">
+                Se vienen muchos sorteos para consentir al jefe de la casa.
+            </p>
+            <section id="cajas">
+                <div class="contenedor">
+                    <div class="caja">
+                        <img src="img/Hombres/Italian-designer.jpg" alt="">
+                        <h3>Jackie Robie</h3>
+                        <h4 class="cod">cd439670</h4>
+                        <h3>$34.00</h3>
+                        <button type="submit" class="boton1">Añadir al carrito</button>
+                    </div>
+                    <div class="caja">
+                        <img src="img/Hombres/calzado.jpg" alt="">
+                        <h3>Zapato electricista</h3>
+                        <h4 class="cod">cd439670</h4>
+                        <h3>$30.00</h3>
+                        <button type="submit" class="boton1">Añadir al carrito</button>
+                    </div>
+                    <div class="caja">
+                        <img src="img/Hombres/casual.jpg" alt="">
+                        <h3>Casual</h3>
+                        <h4 class="cod">cd439670</h4>
+                        <h3>$19.50</h3>
+                        <button type="submit" class="boton1">Añadir al carrito</button>
+                    </div>
+                </div>
+            </section>
+            <section id="cajas">
+                <div class="contenedor">
+                    <div class="caja">
+                        <img src="img/Hombres/Fashion-homem.jpg" alt="">
+                        <h3>Fashion-homem</h3>
+                        <h4 class="cod">cd439670</h4>
+                        <h3>$30.00</h3>
+                        <button type="submit" class="boton1">Añadir al carrito</button>
+                    </div>
+                    <div class="caja">
+                        <img src="img/Hombres/marca-nevada.jpg" alt="">
+                        <h3>nevada</h3>
+                        <h4 class="cod">cd439670</h4>
+                        <h3>$25.70</h3>
+                        <button type="submit" class="boton1">Añadir al carrito</button>
+                    </div>
+                    <div class="caja">
+                        <img src="img/Hombres/Playboy-marca-TOP-Taylor.jpg" alt="">
+                        <h3>Playboy</h3>
+                        <h4 class="cod">cd439670</h4>
+                        <h3>$25.00</h3>
+                        <button type="submit" class="boton1">Añadir al carrito</button>
+                    </div>
+                </div>
+            </section>
+            <section id="cajas">
+                <div class="contenedor">
+                    <div class="caja">
+                        <img src="img/Hombres/sapato-kallucci.jpg" alt="">
+                        <h3>Zapato-kallucci</h3>
+                        <h4 class="cod">cd439670</h4>
+                        <h3>$30.00</h3>
+                        <button type="submit" class="boton1">Añadir al carrito</button>
+                    </div>
+                    <div class="caja">
+                        <img src="img/Hombres/sapato-social-masculino-.jpg" alt="">
+                        <h3>Zapato Social</h3>
+                        <h4 class="cod">cd439670</h4>
+                        <h3>$25.70</h3>
+                        <button type="submit" class="boton1">Añadir al carrito</button>
+                    </div>
+                    <div class="caja">
+                        <img src="img/Hombres/tenis.jpg" alt="">
+                        <h3>Tenis</h3>
+                        <h4 class="cod">cd439670</h4>
+                        <h3>$25.00</h3>
+                        <button type="submit" class="boton1">Añadir al carrito</button>
+                    </div>
+                </div>
+            </section>
+            <section id="Kids">
+                <div class="contenedor">
+                    <h1>Kids</h1>
+                    <hr>
+                    <h1>Para los mas peques de la casa hemos tomado a bien hacer un descuento a marcas selecionadas del 50%
+                        de descuento al comprar online y de un 30% de descuento al visitarnos.
+                    </h1>
+                    <h4 class="oscuro">
+                        Se viene el dia del niño y en zapatería Danielita tendremos muchas sopresas y descuentos increibles.
+                    </h4>
+                    <section id="cajas">
+                        <div class="contenedor">
+                            <div class="caja">
+                                <img src="img/Niños/zapato casual.jpg" alt="">
+                                <h3>Zapatos cafes</h3>
+                                <h4 class="cod">cd439670</h4>
+                                <h3>$40.00</h3>
+                                <button type="submit" class="boton1">Añadir al carrito</button>
+                            </div>
+                            <div class="caja">
+                                <img src="img/Niños/rayo.jpg" alt="">
+                                <h3>Tenis tradicional</h3>
+                                <h4 class="cod">cd439670</h4>
+                                <h3>$30.00</h3>
+                                <button type="submit" class="boton1">Añadir al carrito</button>
+                            </div>
+                            <div class="caja">
+                                <img src="img/Niños/rayomac.jpg" alt="">
+                                <h3>Tenis Maccqueen</h3>
+                                <h4 class="cod">cd439670</h4>
+                                <h3>$19.50</h3>
+                                <button type="submit" class="boton1">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="cajas">
+                        <div class="contenedor">
+                            <div class="caja">
+                                <img src="img/Niños/sandalia.jpg" alt="">
+                                <h3>Sandalias</h3>
+                                <h4 class="cod">cd439670</h4>
+                                <h3>$30.00</h3>
+                                <button type="submit" class="boton1">Añadir al carrito</button>
+                            </div>
+                            <div class="caja">
+                                <img src="img/Niños/zapatos reebook.jpg" alt="">
+                                <h3>Tenis Reebook</h3>
+                                <h4 class="cod">cd439670</h4>
+                                <h3>$25.70</h3>
+                                <button type="submit" class="boton1">Añadir al carrito</button>
+                            </div>
+                            <div class="caja">
+                                <img src="img/Niños/botita.jpg" alt="">
+                                <h3>Botas de lona</h3>
+                                <h4 class="cod">cd439670</h4>
+                                <h3>$25.00</h3>
+                                <button type="submit" class="boton1">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+            <section id="Marcas">
+                <div class="contenedor">
+                    <h1>Marcas</h1>
+                    <hr>
+                    <h1>Tenemos una extensa variedad de Marcas para todos los gustos y para todas las edades.
+                        solo tienes que venir o haz tus pedidos online.
+                    </h1>
+                    <section id="cajas">
+                        <div class="contenedor">
+                            <div class="caja">
+                                <img src="img/Marcas/adidas.jpg" alt="">
+                                <button type="submit" class="boton1">Ver la variedad</button>
+                            </div>
+                            <div class="caja">
+                                <img src="img/Marcas/converse.png" alt="">
+                                <button type="submit" class="boton1">Ver la variedad</button>
+                            </div>
+                            <div class="caja">
+                                <img src="img/Marcas/nike.jpg" alt="">
+                                <button type="submit" class="boton1">Ver la variedad</button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+            <section id="Contactanos">
+                    <div class="contenedor">
+                        <section id="cajas">
+                            <div class="contenedor">
+                                    <h1>Contactanos</h1>
+                                    <hr>
+                                <div class="caja">
+                                        <div class="container">
+                                                <div class="form__top">
+                                                    <h2><span>CONTACTANOS</span></h2>
+                                                </div>		
+                                                <form class="form__reg" action="">
+                                                    <input class="input" type="text" placeholder="&#128100;  Nombre" required autofocus>
+                                                    <input class="input" type="email" placeholder="&#9993;  Email" required>
+                                                    <input class="input" type="text" placeholder="&#128222;  Telefono" required>
+                                                    <input class="input" type="text" placeholder="&#8962;  Dirección" required>
+                                                    <div class="btn__form">
+                                                        <input class="btn__submit" type="submit" value="REGISTRAR">
+                                                        <input class="btn__reset" type="reset" value="LIMPIAR">	
+                                                    </div>
+                                                </form>
+                                            </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+        </div>
+    </section>
+    <footer>
+        <p>
+            Tienda y zapateria Danielita, Copyright &copy 2018
+        </p>
     </footer>
+
+
+    <script src="js/script.js"></script>
 </body>
+
 </html>
