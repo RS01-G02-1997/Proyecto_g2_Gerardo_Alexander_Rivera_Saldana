@@ -1,18 +1,28 @@
-//tomamos la altura   
-var altura = $('nav').offset().top;
-//verificamos el scroll
-$(window).on('scroll', function(){
-    //si escroll es mayor a altura
-    if ( $(window).scrollTop() > altura ){
-        $('nav').addClass('NavFixed');
-    } else {
-        $('nav').removeClass('NavFixed');
-    }
+$(document).ready(function(){
+    var altura = $('.menu').offset().top;
+
+    $(window).on('scroll', function(){
+        if ($(window).scrollTop() > altura){
+            $('.menu').addClass('menu-fixed');
+        }else {
+            $('.menu').removeClass('menu-fixed');
+        }
+    });
 });
 
-$("#Mujer").on("click", function (Evento) {
-    Evento.preventDefault();
-    $('html,body').animate({
-        scrollTop: $("#Mujer").offset().top - 250
-    }, 500);
-});
+//codigo para mostrar en grande el mensaje de los articulos exclusivos de hombres.//
+$("#box").hover(
+    function (){
+        $(this).animate({ 'width': "356px", "height" : "356px"});
+    },
+    function (){
+        $(this).animate({ 'width': "105px", "height" : "105px"});
+    }
+);
+//Codigo para leer mas en la descripcion de la cabecera y en la seccion de Marcas//
+   jQuery(function () {
+     jQuery(".leerMas").bind("click", function () {
+   jQuery(this).text(jQuery(this).text() == "Leer más" ? "Ocultar" : "Leer más");
+   jQuery(this).prev().slideToggle();
+    });
+  });

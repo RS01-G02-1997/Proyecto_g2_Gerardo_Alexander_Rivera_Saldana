@@ -12,18 +12,15 @@
 
 <body>
     <header>
-        <div class="contenedor">
-            <div id="Marca">
-                <h1>Zapateria<span class="resaltado"> Danielita</span></h1>
-            </div>
-            <nav>
+        <div>
+            <nav class="menu-fixed">
                 <ul>
-                    <li class="actual" id="cabecera" class="inicio"><a href="#">Inicio</a></li>
-                    <li class=""><a href="#Mujer">Mujer</a></li>
-                    <li class=""><a href="#Hombre">Hombre</a></li>
-                    <li class=""><a href="#Kids">Kids</a></li>
-                    <li class=""><a href="#Marca">Marcas</a></li>
-                    <li class=""><a href="#Contactanos">Contactanos</a></li>
+                    <li class="inicio"><a id="text" href="#">Inicio</a></li>
+                    <li><a href="#Mujer">Mujer</a></li>
+                    <li><a href="#Hombre">Hombre</a></li>
+                    <li><a href="#Kids">Kids</a></li>
+                    <li><a href="#Marcas">Marcas</a></li>
+                    <li><a href="#Contactanos">Contactanos</a></li>
                 </ul>
             </nav>
         </div>
@@ -44,40 +41,23 @@
                 <button type="submit" class="boton1">Suscribete</button>
             </form>
         </div>
+        <div>Zapateria Danielita es una tienda oficial en Tacuba la cual cuenta con muchisimas marcas de zapatos. Actualmente 
+            estamos en las gestiones de poner una sucursal en Maxxi Despensa de aca en Ahuachapan y asi expandirnos hasta Chalatenango.
+        </div>
+        <div class="infoExtra">En esta tienda como requicito para comprar en linea tendras que tener cuenta de banco Agricola o Banco Azul o poseer cuenta en 
+            Paypal o Bitcoins.
+             Aqui tendras todos los articulos desde la comodidad de tu casa y estamos para servirte los 365 dias del año y las 24 horas del dia.</div>
+        <div class="leerMas">Leer más</div>
 
     </section>
-    <section id="cajas">
-        <div class="contenedor">
-            <div class="caja">
-                <img src="img/zapatodemoda.jpg" alt="">
-                <h3>Zapatos para caballero</h3>
-                <p>Contamos con los mejores precios del mercado, llegó a nuestra tienda este zapato deportivo para caballeros
-                    a un maravilloso precio de $24.00 doláres.
-                </p>
-            </div>
-            <div class="caja">
-                <img src="img/zapatodemodaella.jpg" alt="">
-                <h3>Zapatos para señorita</h3>
-                <p>Sabemos que las Señoritas se merecen lo mejor por eso hemos importado de EE.UU esta nueva marca de zapatos
-                    especialmente para aquellas que quieren estar al paso de las modas. Llevatelos a tan solo $30.00 doláres.
-                </p>
-            </div>
-            <div class="caja">
-                <img src="img/zapatodemodael.jpg" alt="">
-                <h3>Zapatos de moda unisex</h3>
-                <p>Mira nuestras mejores ofertas del mercado, recientemente incorporamos este estilo de zapato para damas
-                    y caballeros a un increible precio de $26.70 doláres, ven antes que se agoten.
-                </p>
-            </div>
-        </div>
-    </section>
+    
     <section id="Mujer">
         <div class="contenedor">
             <h1>Zapatos de Mujeres</h1>
-            <p>En nuestra tienda tenemos una extensa variedad de calzado para damas, recuerda enviarnos un correo para poder
+            <p class="cajas">En nuestra tienda tenemos una extensa variedad de calzado para damas, recuerda enviarnos un correo para poder
                 tener la oportunidad de recibir ofertas en tu móvil o en tu ordenador.
             </p>
-            <p class="oscuro">
+            <p class="cajas">
                 En nuestra tienda tenemos ofertas especiales para ti. Se vienen grandes ofertas en este fin de ano.
             </p>
             <section id="cajas">
@@ -90,8 +70,8 @@
                         <button type="submit" class="boton1">Añadir al carrito</button>
                     </div>
                     <div class="caja">
-                        <img src="img/mujer (2).jpg" alt="">
-                        <h3>Tenis verdana</h3>
+                        <img src="img/puma.jpg" alt="">
+                        <h3>Puma</h3>
                         <h4 class="cod">cd439670</h4>
                         <h3>$30.00</h3>
                         <button type="submit" class="boton1">Añadir al carrito</button>
@@ -108,7 +88,7 @@
             <section id="cajas">
                 <div class="contenedor">
                     <div class="caja">
-                        <img src="img/tenisinformal.jpg" alt="">
+                        <img src="img/tenis.jpg" alt="">
                         <h3>Tenis Informal</h3>
                         <h4 class="cod">cd439670</h4>
                         <h3>$30.00</h3>
@@ -130,6 +110,13 @@
                     </div>
                 </div>
             </section>
+        </div>
+        <div id="box">
+           <p id="box" class="letrainfo">Cabe destacar que las siguientes marcas son exclusivas de hombres y la tienda no se hace
+               responsable de cualquier eleccion equivoca referente a la marca selecionada. Es por eso que
+               que cada articulo tiene su propio codigo de registro.
+               Atentamente: "Zapateria Danielita"
+           </p>
         </div>
     </section>
     <section id="Hombre">
@@ -283,54 +270,64 @@
                 <div class="contenedor">
                     <h1>Marcas</h1>
                     <hr>
-                    <h1>Tenemos una extensa variedad de Marcas para todos los gustos y para todas las edades.
-                        solo tienes que venir o haz tus pedidos online.
+                    <h1>Te presentamos tres de las marcas mas reconocidas en nuestra tienda. solo tienes
+                        que venir o haz tus pedidos online de tus zapatos de estas marcas.
                     </h1>
                     <section id="cajas">
                         <div class="contenedor">
                             <div class="caja">
                                 <img src="img/Marcas/adidas.jpg" alt="">
-                                <button type="submit" class="boton1">Ver la variedad</button>
+                                    <div id="colortextofinal" class="infoExtra">ADIDAS es una marca oficial que firmo junto con Zapateria Danielita una alianza para ser una exportadora de 
+                                        su marca, con lo cual se pretende satisfacer las necesidades de los clientes al buscar calzado de esta prestigiosa 
+                                        marca.
+                                    </div>
+                                    <div id="boton2" class="leerMas">Leer más</div>
                             </div>
                             <div class="caja">
                                 <img src="img/Marcas/converse.png" alt="">
-                                <button type="submit" class="boton1">Ver la variedad</button>
+                                <div id="colortextofinal" class="infoExtra">Otra de las marcas que tanto han aceptado en esta zapateria es CONVERSE por lo tanto esta marca se viene 
+                                    con grandes ofertas especialmente para los niños/as y asi tambien adultos para darle prioridad a los reyes la casa en este mes de Octubre.
+                                    </div>
+                                    <div id="boton2" class="leerMas">Leer más</div>
                             </div>
                             <div class="caja">
                                 <img src="img/Marcas/nike.jpg" alt="">
-                                <button type="submit" class="boton1">Ver la variedad</button>
+                                <div id="colortextofinal" class="infoExtra">NIKE se distingue por la eleccion que tienen los hombres hacia esta marca, es muy delicada al fabricar zapatos
+                                     ya que son suaves y con mucho confort por lo tanto te recomendamos visitarnos y elegir tus zapatos NIKE.
+                                        </div>
+                                        <div id="boton2" class="leerMas">Leer más</div>
                             </div>
                         </div>
                     </section>
                 </div>
             </section>
             <section id="Contactanos">
-                    <div class="contenedor">
-                        <section id="cajas">
-                            <div class="contenedor">
-                                    <h1>Contactanos</h1>
-                                    <hr>
-                                <div class="caja">
-                                        <div class="container">
-                                                <div class="form__top">
-                                                    <h2><span>CONTACTANOS</span></h2>
-                                                </div>		
-                                                <form class="form__reg" action="">
-                                                    <input class="input" type="text" placeholder="&#128100;  Nombre" required autofocus>
-                                                    <input class="input" type="email" placeholder="&#9993;  Email" required>
-                                                    <input class="input" type="text" placeholder="&#128222;  Telefono" required>
-                                                    <input class="input" type="text" placeholder="&#8962;  Dirección" required>
-                                                    <div class="btn__form">
-                                                        <input class="btn__submit" type="submit" value="REGISTRAR">
-                                                        <input class="btn__reset" type="reset" value="LIMPIAR">	
-                                                    </div>
-                                                </form>
-                                            </div>
+                <div class="contenedor">
+                    <section id="cajas">
+                        <div class="contenedor">
+                            <h1>Contactanos</h1>
+                            <hr>
+                            <div class="caja">
+                                <div class="container">
+                                    <div class="form__top">
+                                        <h2><span>CONTACTANOS</span></h2>
+                                    </div>
+                                    <form class="form__reg" action="">
+                                        <input class="input" type="text" placeholder="&#128100;  Nombre" required autofocus>
+                                        <input class="input" type="email" placeholder="&#9993;  Email" required>
+                                        <input class="input" type="text" placeholder="&#128222;  Telefono" required>
+                                        <input class="input" type="text" placeholder="&#8962;  Dirección" required>
+                                        <div class="btn__form">
+                                            <input class="btn__submit" type="submit" value="REGISTRAR">
+                                            <input class="btn__reset" type="reset" value="LIMPIAR">
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
-                        </section>
-                    </div>
-                </section>
+                        </div>
+                    </section>
+                </div>
+            </section>
         </div>
     </section>
     <footer>
@@ -338,6 +335,12 @@
             Tienda y zapateria Danielita, Copyright &copy 2018
         </p>
     </footer>
+
+
+
+
+
+
 
 
     <script src="js/script.js"></script>

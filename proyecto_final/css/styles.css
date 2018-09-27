@@ -1,13 +1,11 @@
 body{
     font: 15px Arial, Helvetica, sans-serif;
-    margin: 3%;
+    margin: 5%;
     padding: 0;
     background-color: white;
 }
-
-/*Estilos generales*/
 .contenedor{
-    width: 80%;
+    width: 100%;
     margin: auto;
     overflow: hidden;
 }
@@ -23,46 +21,62 @@ ul{
     padding-right: 20px;
     color: #fff;
 }
-/*estilos de encabezados*/
-header{
-    background-color: #24282b;
+.boton2{
+    
+    height: 38px;
+    background-color: #e8491d;
+    border: 0;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
     color: #fff;
-    padding: 30px;
-    min-height: 70px;
-    border-bottom: 5px solid #1293d4;
 }
-header a{
+
+#boton2{
+    height: 38px;
+    background-color: #e8491d;
+    border: 0;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #fff;
+}
+
+/*estilos de menu*/
+header nav{
+    background-color: #24282b;
+    margin-bottom: 10px;
+}
+header nav ul{
+    list-style: none;
+    overflow: hidden;
+}
+header nav ul li{
+    float: left;
+}
+header nav ul li a{
+    display: block;
+    padding: 20px;
     color: #fff;
     text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
 }
-header li{
-    float: left;
-    display: inline;
-    padding: 0 20px 0 20px;
+header nav ul li a:hover{
+    background: #e8491d;
 }
-header #marca{
-    float: left;
+.menu-fixed{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 90%;
+    max-width: 90%;
 }
-header #marca h1{
-    margin: 0;
-}
-header nav{
-    float: right;
-    margin-top: 10px;
-}
-header .resultado,header .actual a{
-    color: #1293d4;
-    font-weight: bold;
-}
-header a:hover{
-    color: #ccc;
-    font-weight: bold;
+.menu-fixed ul li a{
+    padding: 20px;
 }
 
 /*cabecera imagen*/
 #cabecera{
+    height: 50%;
     width: 100%;
     min-height: 100%;
     background: url('../img/cabecera.jpeg') no-repeat 0 -400px;
@@ -101,50 +115,39 @@ header a:hover{
 }
 /*estilos de cajas de la cabecera*/
 #cajas{
-    margin-top: 20px;
+     background: rgb(252, 252, 252);
+}
+.caja2{
+    width: 70%;
+    
+    background: blueviolet;
 }
 #cajas .caja{
     float: left;
     text-align: center;
     width: 30%;
     padding: 10px;
+    height: 60%;
 }
 #cajas .caja img{
     width: 200px;
+}
+/*tamano de la imagen de cabecera*/
+.img{
+    width: 200px;
+    height: 200px;
 }
 /*estilos para la codificacion de cada zapato en cada menu*/
 .cod{
     color: #e8491d;
 }
-
 /*estilos de footer*/
 footer{
     padding: 20px;
-    margin-top: 20px;
-    color: #fff;
-    background-color: #1293d4;
+    color: rgb(5, 0, 0);
     text-align: center;
+    background: #31B1E5;
 }
-/*estilos para fixear el nav*/
-/*.NavFixed {
-    position: fixed;
-    top: 0;
-    width: 89.99%;
-    background: rgba(41, 38, 38, 0.973);
-    color: white !important;
-    z-index: 100px;
-    border: none;
-    box-shadow:  2px 2px 1px #999;
-  }
-  .NavFixed a{
-    color: white !important;
-  } 
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-  /*.NavFixed + .content {
-    padding-top: 60px;
-  }*/
-
-
 .container{
     width: 200%;
     margin-left: 100%;
@@ -211,3 +214,29 @@ h2 span {
 .btn__reset:hover{
 	background-color: rgb(77, 159, 253);
 }
+
+/*efecto de div con box para aplicar efectos de jquery*/
+#box{
+    width: 356px;
+    height: 105px;
+    background: rgba(0, 255, 221, 0.335);
+    display: block;
+    border-radius: 5px;
+}
+.letrainfo{
+    font-size: 15px;
+}
+#colortextofinal{
+    color: black;
+    font-size: 19px;
+}
+
+/*Efecto de jquery para simular LEER MAS*/
+div {
+    margin:10px;
+  }
+  div.infoExtra {
+    display:none;
+  }
+  .leerMas { color:rgb(240, 158, 26); cursor:pointer; display:inline;}
+  .leerMas:hover {color:purple; text-decoration:underline;}
